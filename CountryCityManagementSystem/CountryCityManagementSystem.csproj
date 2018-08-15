@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBA6B167-5FB8-43FF-B741-B94402EC5694}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CountryCityManagementSystem</RootNamespace>
+    <AssemblyName>CountryCityManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="UI\CityEntryUI.aspx" />
+    <Content Include="UI\CountryEntryUI.aspx" />
+    <Content Include="UI\css\bootstrap-theme.css" />
+    <Content Include="UI\css\bootstrap-theme.min.css" />
+    <Content Include="UI\css\bootstrap.css" />
+    <Content Include="UI\css\bootstrap.min.css" />
+    <Content Include="UI\css\froala_editor.css" />
+    <Content Include="UI\css\froala_editor.min.css" />
+    <Content Include="UI\css\froala_style.css" />
+    <Content Include="UI\css\froala_style.min.css" />
+    <Content Include="UI\css\plugins\char_counter.css" />
+    <Content Include="UI\css\plugins\char_counter.min.css" />
+    <Content Include="UI\css\plugins\code_view.css" />
+    <Content Include="UI\css\plugins\code_view.min.css" />
+    <Content Include="UI\css\plugins\colors.css" />
+    <Content Include="UI\css\plugins\colors.min.css" />
+    <Content Include="UI\css\plugins\emoticons.css" />
+    <Content Include="UI\css\plugins\emoticons.min.css" />
+    <Content Include="UI\css\plugins\file.css" />
+    <Content Include="UI\css\plugins\file.min.css" />
+    <Content Include="UI\css\plugins\fullscreen.css" />
+    <Content Include="UI\css\plugins\fullscreen.min.css" />
+    <Content Include="UI\css\plugins\image.css" />
+    <Content Include="UI\css\plugins\image.min.css" />
+    <Content Include="UI\css\plugins\image_manager.css" />
+    <Content Include="UI\css\plugins\image_manager.min.css" />
+    <Content Include="UI\css\plugins\line_breaker.css" />
+    <Content Include="UI\css\plugins\line_breaker.min.css" />
+    <Content Include="UI\css\plugins\table.css" />
+    <Content Include="UI\css\plugins\table.min.css" />
+    <Content Include="UI\css\plugins\video.css" />
+    <Content Include="UI\css\plugins\video.min.css" />
+    <Content Include="UI\css\Style.css" />
+    <Content Include="UI\css\themes\dark.css" />
+    <Content Include="UI\css\themes\dark.min.css" />
+    <Content Include="UI\css\themes\gray.css" />
+    <Content Include="UI\css\themes\gray.min.css" />
+    <Content Include="UI\css\themes\red.css" />
+    <Content Include="UI\css\themes\red.min.css" />
+    <Content Include="UI\css\themes\royal.css" />
+    <Content Include="UI\css\themes\royal.min.css" />
+    <Content Include="UI\Index.aspx" />
+    <Content Include="UI\js\bootstrap.min.js" />
+    <Content Include="UI\js\froala_editor.min.js" />
+    <Content Include="UI\js\jquery-2.1.4.min.js" />
+    <Content Include="UI\js\languages\ar.js" />
+    <Content Include="UI\js\languages\bs.js" />
+    <Content Include="UI\js\languages\cs.js" />
+    <Content Include="UI\js\languages\da.js" />
+    <Content Include="UI\js\languages\de.js" />
+    <Content Include="UI\js\languages\en_ca.js" />
+    <Content Include="UI\js\languages\en_gb.js" />
+    <Content Include="UI\js\languages\es.js" />
+    <Content Include="UI\js\languages\et.js" />
+    <Content Include="UI\js\languages\fa.js" />
+    <Content Include="UI\js\languages\fi.js" />
+    <Content Include="UI\js\languages\fr.js" />
+    <Content Include="UI\js\languages\he.js" />
+    <Content Include="UI\js\languages\hr.js" />
+    <Content Include="UI\js\languages\hu.js" />
+    <Content Include="UI\js\languages\id.js" />
+    <Content Include="UI\js\languages\it.js" />
+    <Content Include="UI\js\languages\ja.js" />
+    <Content Include="UI\js\languages\ko.js" />
+    <Content Include="UI\js\languages\me.js" />
+    <Content Include="UI\js\languages\nb.js" />
+    <Content Include="UI\js\languages\nl.js" />
+    <Content Include="UI\js\languages\pl.js" />
+    <Content Include="UI\js\languages\pt_br.js" />
+    <Content Include="UI\js\languages\pt_pt.js" />
+    <Content Include="UI\js\languages\ro.js" />
+    <Content Include="UI\js\languages\ru.js" />
+    <Content Include="UI\js\languages\sr.js" />
+    <Content Include="UI\js\languages\sv.js" />
+    <Content Include="UI\js\languages\th.js" />
+    <Content Include="UI\js\languages\tr.js" />
+    <Content Include="UI\js\languages\ua.js" />
+    <Content Include="UI\js\languages\zh_cn.js" />
+    <Content Include="UI\js\languages\zh_tw.js" />
+    <Content Include="UI\js\plugins\align.min.js" />
+    <Content Include="UI\js\plugins\char_counter.min.js" />
+    <Content Include="UI\js\plugins\code_beautifier.min.js" />
+    <Content Include="UI\js\plugins\code_view.min.js" />
+    <Content Include="UI\js\plugins\colors.min.js" />
+    <Content Include="UI\js\plugins\emoticons.min.js" />
+    <Content Include="UI\js\plugins\entities.min.js" />
+    <Content Include="UI\js\plugins\file.min.js" />
+    <Content Include="UI\js\plugins\font_family.min.js" />
+    <Content Include="UI\js\plugins\font_size.min.js" />
+    <Content Include="UI\js\plugins\fullscreen.min.js" />
+    <Content Include="UI\js\plugins\image.min.js" />
+    <Content Include="UI\js\plugins\image_manager.min.js" />
+    <Content Include="UI\js\plugins\inline_style.min.js" />
+    <Content Include="UI\js\plugins\line_breaker.min.js" />
+    <Content Include="UI\js\plugins\link.min.js" />
+    <Content Include="UI\js\plugins\lists.min.js" />
+    <Content Include="UI\js\plugins\paragraph_format.min.js" />
+    <Content Include="UI\js\plugins\paragraph_style.min.js" />
+    <Content Include="UI\js\plugins\quote.min.js" />
+    <Content Include="UI\js\plugins\save.min.js" />
+    <Content Include="UI\js\plugins\table.min.js" />
+    <Content Include="UI\js\plugins\url.min.js" />
+    <Content Include="UI\js\plugins\video.min.js" />
+    <Content Include="UI\ViewCity.aspx" />
+    <Content Include="UI\ViewCountryUI.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CityManager.cs" />
+    <Compile Include="BLL\CountryManager.cs" />
+    <Compile Include="Gateway\CityGateway.cs" />
+    <Compile Include="Gateway\CountryGateway.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\CountryView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CityEntryUI.aspx.cs">
+      <DependentUpon>CityEntryUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CityEntryUI.aspx.designer.cs">
+      <DependentUpon>CityEntryUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CountryEntryUI.aspx.cs">
+      <DependentUpon>CountryEntryUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CountryEntryUI.aspx.designer.cs">
+      <DependentUpon>CountryEntryUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCity.aspx.cs">
+      <DependentUpon>ViewCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCity.aspx.designer.cs">
+      <DependentUpon>ViewCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCountryUI.aspx.cs">
+      <DependentUpon>ViewCountryUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCountryUI.aspx.designer.cs">
+      <DependentUpon>ViewCountryUI.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="UI\img\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35020</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35020/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
